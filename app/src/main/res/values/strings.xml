@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shinchan beta</string>
+
+    <string name="playlist">playlist</string>
+    <string name="current">current</string>
+    <string name="about">About</string>
+    <string name="this_app_is_developed_by_skylimit_tech_if_like_this_app_send_your_feedback_to_techskylimit_gmail_com">This App is Developed By SkyLimit Tech If Like this app Send your Feedback to techskylimit@gmail.com</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="textView4">Send Your Feedback for this beta app by click the button below</string>
+    <string name="ak">* This application is a beta version</string>
+</resources>
