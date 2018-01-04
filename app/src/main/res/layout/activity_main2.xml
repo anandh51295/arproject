@@ -8,24 +8,16 @@
     android:background="@drawable/ar"
     tools:context="com.example.virus.shinchanbeta.Main2Activity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Watch"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
-
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginEnd="67dp"
-        android:layout_marginTop="104dp"
-        android:text="Movies" />
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="75dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Movies"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <Button
         android:id="@+id/button4"
@@ -34,8 +26,9 @@
 
         android:layout_alignStart="@+id/button3"
         android:layout_below="@+id/button3"
-        android:layout_marginTop="47dp"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="EPISODES"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         tools:ignore="OnClick" />
 
 </RelativeLayout>
