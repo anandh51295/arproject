@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "125348037382",
+    "firebase_url": "https://shinchan-beta.firebaseio.com",
+    "project_id": "shinchan-beta",
+    "storage_bucket": "shinchan-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125348037382:android:4eee4bfd7cd15262",
+        "android_client_info": {
+          "package_name": "com.example.virus.shinchanbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125348037382-kg1pfdvp5fn0kq7jrhjs1rpq0mm34u5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQuvWPQlNPEv9vYij-2FQRmt2eQByE5bU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
