@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Shinchanbeta.iml" filepath="$PROJECT_DIR$/Shinchanbeta.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/arproject.iml" filepath="$PROJECT_DIR$/arproject.iml" />
     </modules>
   </component>
 </project>
