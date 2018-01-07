@@ -32,8 +32,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import com.example.virus.shinchan.R;
-import com.example.virus.shinchan.app.Config;
+import com.example.virus.shinchanbeta.R;
+import com.example.virus.shinchanbeta.app.Config;
 
 /**
  * Created by Ravi on 31/03/15.
