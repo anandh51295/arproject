@@ -1,5 +1,6 @@
 package com.example.virus.shinchanbeta;
 
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private BroadcastReceiver mRegistrationBroadcastReceiver;
     private TextView txtRegId, txtMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn=(Button)findViewById(R.id.button2);
         textView=(TextView)findViewById(R.id.textView);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +84,29 @@ public class MainActivity extends AppCompatActivity {
         displayFirebaseRegId();
 
     }
+    @Override
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+    @SuppressLint("NewApi") @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.about:
+                Intent intent =new Intent(MainActivity.this,Main6Activity.class);
+                startActivity(intent);
+                return (true);
+            case R.id.exit:
+                finish();
+                System.exit(0);
+                return (true);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     private void displayFirebaseRegId() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences(Config.SHARED_PREF, 0);
         String regId = pref.getString("regId", null);

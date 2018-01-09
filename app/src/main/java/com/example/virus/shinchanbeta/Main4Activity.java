@@ -1,9 +1,12 @@
 package com.example.virus.shinchanbeta;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -66,6 +69,27 @@ public class Main4Activity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+    @SuppressLint("NewApi") @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.about:
+                Intent intent =new Intent(Main4Activity.this,Main6Activity.class);
+                startActivity(intent);
+                return (true);
+            case R.id.exit:
+                finish();
+                System.exit(0);
+                return (true);
+        }
+        return super.onOptionsItemSelected(item);
     }
     //Toast.makeText(Main7Activity.this, type +" " +play, Toast.LENGTH_LONG).show();
 
